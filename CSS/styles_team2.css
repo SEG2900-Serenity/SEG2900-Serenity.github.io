@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+JP:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li, a, .signup, .login {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.navtop{
+  display: flex; /*Display allows the iteams to be in the same line*/
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.navtop ul{
+  float: left;
+}
+
+
+.navtop-centered ul {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  display: inline-block;
+  background-color: white; /*just to see how large the area is*/
+}
+
+.navtop-right {
+  float: right;
+  justify-content: space-between;
+
+}
+
+/*adjusting when the window size shrinks*/
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .navtop li, .navtop-right {
+    float: none;
+    display: block;
+  }
+
+  .navtop-centered li {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.nav_links{
+  list-style: none;
+  text-align: center;
+
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px; /*controls the spacing in between the links in the navigation bar*/
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: azure;
+}
+
+.login{
+  padding: 9px 25px;
+  background-color: #FFEDDF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  /*margin-left:50%;*/
+    margin-right: 5px;*/
+  text-align: left;
+}
+
+.login:hover{
+  background-color: azure;
+}
+
+.signup {
+  padding: 9px 25px;
+  background-color: #FFEDDF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.signup:hover{
+  background-color: azure;
+}
+
+.text{
+  color:white;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 1px;
+  font-size: 80%;
+}
