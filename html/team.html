@@ -1,117 +1,309 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/*topnav {
-  overflow: hidden;
-  background-color: #333;
-}*/
+  <head>
 
-.topnav a{
-  float: left;
-  color: blue;
-  text-align: center;
-  padding: 20px 30px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/*.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}*/
-
-.content {
-  text-align = center;
-  padding: 10px 25px;
-}
-
-.header {
-  margin: auto;
-  width: 90%;
-  border: 3px dotted tan;
-  padding: 10px;
-  text-align: center;
-}
-
-th, td {
-  text-align = center;
-  padding: 4px;
-
-}
-
-</style>
-</head>
-<body>
-
-<div class = "header">
-<h1> Navigation Placeholder + Symbol at left </h1>
-</div>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#features">Features</a>
-  <a href="#pricing">Pricing</a>
-  <a href="#about">About the Team</a>
-</div>
-
-<br><br><br>
-
-<hr> <!--puts a horizontal line-->
-<div class= "content">
-  <h2><br><center>Meet the Team</center><br></h2>
-
-<table>
-  <tr>
-      <th> Name</th>
-      <th> Role </th>
-      <th> Fun Fact </th>
-  </tr>
-  <tr>
-      <td> Tim S.</td>
-      <td> Developer </td>
-      <td> N/A </td>
-  </tr>
-  <tr>
-      <td> Arun S.</td>
-      <td> Developer </td>
-      <td> N/A </td>
-  </tr>
-  <tr>
-      <td> Mayoor A.</td>
-      <td> Developer </td>
-      <td> N/A </td>
-  </tr>
-  <tr>
-      <td> Michael H.</td>
-      <td> Developer </td>
-      <td> N/A </td>
-  </tr>
-  <tr>
-      <td> Hasan J.</td>
-      <td> Developer </td>
-      <td> N/A </td>
-  </tr>
-  <tr>
-      <td> Asad A.</td>
-      <td> Developer </td>
-      <td> N/A </td>
-  </tr>
-</table>
-<br> <br> <br>
-<h3> Company contact info </h3>
-<p> Not available at the moment </p>
-</div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Serenity</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- allows the webpage to scale-->
+    <link rel="stylesheet" href="styles_team2.css">
 
 
-</body>
-</html>
+    <style>
+
+      body {
+        margin: 0px;
+        padding: inherit;
+        font-family: 'Noto Sans JP', 'sans-serif';
+        background-color:#FFBB98;
+
+      }
+
+      .fake-body{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .fake-body2{ /*to decrease the width of the team boxes*/
+        width: 70%;
+        margin-left: auto; /*aligns the images in the center*/
+        margin-right: auto;
+      }
+
+      .content {
+        text-align: center;
+        padding: 10px 25px;
+
+      }
+
+      .header {
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+      }
+
+      hr {
+        height: 3px;
+        background-color: black;
+        border-radius: 20px;
+      }
+
+      h2{
+        size: 100px;
+        color: black;
+      }
+
+      /* Purely for the main body-CSS */
+
+      .box{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background-color:  rgba(50, 70, 72, .2);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        border: 2px solid rgba(255,255,255, .2);
+        border-radius: 5px;
+        filter: blur(23);
+        text-align: center;
+      }
+
+      .box h2{
+        text-align: center;
+
+      }
+
+      .box img{
+        align-items: center;
+        display: flex;
+      }
+
+
+
+      /* for the flip cards*/
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 100px;
+
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        border-radius: 100px;
+
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 100px;
+
+      }
+
+      /* in order to get the flip cards in line*/
+      .row{
+        display: flex;
+      }
+
+      .column{
+        flex: 16.67%;
+        padding: 5px;
+      }
+
+      .bottom-center{
+        bottom: 8px;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="header"> Serenity </h1>
+
+    <header class = "navtop">
+
+      <img class = "logo" src = "" alt = "logo">
+      <div class="navtop-centered">
+        <nav class="nav_bar">
+          <ul class = "nav_links">
+              <li><a href = "#">Home</a></li>
+              <li><a href = "#">Features</a></li>
+              <li><a href = "#">Pricing</a></li>
+              <li><a href = "#">Our Team</a></li>
+          </ul>
+        </nav>
+      </div>
+
+        <div class="navtop-right">
+          <ul>
+            <a href = "#"><button class = "login">Login</button></a>
+            <a  href = "#"><button class = "signup">Sign Up</button></a>
+          </ul>
+        </div>
+
+
+    </header>
+
+    <!--The body of the page-->
+
+    <div class=" fake-body">
+
+      <div class="box" align = "center">
+
+        <h2><br>Meet the Team<br></h2>
+
+        <div class= "content">
+
+          <div class="text">
+          <div class="fake-body2" align = "center">
+          <!--For Tim-->
+              <div class="row">
+                <div class="column">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        <!--<div class="bottom-center">Bottom Right</div>-->
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Tim S.</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!--For Arun S.-->
+              <div class="column">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Arun S.</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--For Mayoor A.-->
+              <div class="column">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Mayoor A.</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class = "row">
+
+              <!--For Michael H.-->
+              <div class="column">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Michael H.</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--For Hasan-->
+              <div class="column">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Hasan J.</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--For Asad A.-->
+              <div class="column">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Asad A.</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+      </div> <!-- End of the code required for the box-->
+
+      <h1> </h1>
+
+    </div>
+  </body>
+  </html>
