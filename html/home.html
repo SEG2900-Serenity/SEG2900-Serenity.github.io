@@ -40,8 +40,13 @@
     </body>
 </html>
 
-<script type=’text/javascript’>
-  var myHeaderElement = document.getElementById(‘Title’);
-  myHeaderElement.textContent = ‘Goodbye’;
-</script>
+.AttachOnMouseOverText {
+    color: white;
+}
+
+.AttachOnMouseOutText {
+    color: black;
+}
+
+<div id="Titlet" class="AttachOnMouseOutText" onMouseOver="highlightBG();return true;" onMouseOut="highlightOutBG();return true;">Hidden text</div>
 
