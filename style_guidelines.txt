@@ -1,0 +1,30 @@
+Idea behind the website : Similar to the Apple website, where we will describe the app through our website, talk about the different features, but not specifically go into detail about the specifications.
+
+Colour Palette : Beige and Tan will be the main colors for the website, keeping these throughout in order to be consistent and for the website to be pleasing to the eye.
+Letters : Black and grey, and will change into a different color such as white when the cursor is hovering over a word.
+Fonts : Varying from mainly Montserrat, Noto Sans JP and Arial.
+
+All pages design/ideas;
+
+    Home page :
+    - Will include a link/QR code to the app.
+    - Mission statement : ''Connecting the vulnerable parts of society with the help they need''. Large and visible to capture the readers attention.
+    - Navigation bar including a button for every other page (home page, features...etc). The button changes color when the mouse is hovering over it.
+    - A sign up and log in button for creating a new account or logging in to a previously made account.
+
+    Features :
+    - Short explanations of the features included in the app
+        - Initial Survey : Upon creating account, user will be asked a set of questions that will categorize them and later assign to them a set of exercises. Example : Yoga, meditation, workouts...etc!
+        - Daily exercises : Users can log in every day to perform customized mental health exercises. After answering some simple questions, our algorithm will use machine learning to recommend things like yoga or meditation which can be done in 5 minutes or less.
+        - Point system : User is rewarded for each daily exercise. Points can be spent in the shop to buy cosmetics! Buying the premium package will give extra benifits, including : extra points and removed ads.
+        - Additional Ressources : Books for children, scholarly papers...etc! Resources for all ranges of ages. "You name it, we have it!"
+
+    Profile page :
+    - Sign up + log in buttons at the top right of the page.
+    - On the log in page the user will be asked to provide their username and password.
+    - On the sign up page the user will be asked to provide a username, email, password and optionally a phone number for two factor authentication.
+
+    About Team page : 
+    - Includes the members of the team.
+    - Small message included from each of the members of the Staff.
+    - Photo to identify each person.
