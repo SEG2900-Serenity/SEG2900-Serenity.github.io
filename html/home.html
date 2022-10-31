@@ -40,13 +40,10 @@
     </body>
 </html>
 
-.AttachOnMouseOverText {
-    color: white;
+
+function highlightBG() {  
+    document.getElementById('Title').className='AttachOnMouseOverText';   
 }
-
-.AttachOnMouseOutText {
-    color: black;
+function highlightOutBG(){
+    document.getElementById('Title').className='AttachOnMouseOutText';
 }
-
-<div id="Title" class="AttachOnMouseOutText" onMouseOver="highlightBG();return true;" onMouseOut="highlightOutBG();return true;">Hidden text</div>
-
