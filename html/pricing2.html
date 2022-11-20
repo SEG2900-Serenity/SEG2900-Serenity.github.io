@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Our Features
+        </title>
+        <link rel="stylesheet" href="../html/styles.css">
+        <style>
+            .smalltext {
+                color:black;
+                font-family: 'Noto Sans JP', sans-serif;
+                padding-top: 1px;
+                font-size: 100%;
+                padding-left:5%;
+            }
+            .header3{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 150%;
+                padding-left:5%;
+            }
+            .row{
+                display:flex;
+                justify-content:center;
+                align-content: "flex-start";
+            }
+            /* Create three equal columns that floats next to each other */
+            .column {
+            background-color:grey;
+            border-radius: 25px;
+            border:3px solid black;
+            width:40%;
+            margin:15px;
+            padding:10px
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            .column:hover{
+                box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+            }
+            .column h2, h4 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500 bold;
+                font-size: 16px;
+                color: black;
+
+                text-align:center;
+            }
+            .column li {
+                margin:5px
+            }
+        </style>
+    </head>
+    <body>
+        <header class = "navtop">
+            <a href="../html/index.html">
+                <img class = "logo" src = "https://cdn.discordapp.com/attachments/1021958151060336721/1036476242309939260/unknown.png" alt = "logo" style="display:block;position:absolute; width: 100px; height: 100px;left:10px;top:0px;padding-bottom: 0px;">
+            </a>
+            <nav class = "nav_bar">
+              <ul class = "nav_links">
+                <li><a href = "product.html">Features</a></li>
+                <li><a href = "pricing2.html" style="padding:9px 25px;border:none;border-radius:50px;background-color: black;color:white;">Pricing</a></li>
+                <li><a href = "team.html">Our Team</a></li>
+              </ul>
+          </nav>
+            <a class="cta" href = "#"><button class = "signup">Sign Up</button></a>
+          </header>
+          <br>
+          <h2 class="producttitle"style="border-bottom-style:solid;"></h2>
+          <div class="row">
+            <div class="column">
+                <h2>Standard</h2>
+                <h4>$0/month</h4>
+                <hr style="background-color:black">
+                <ul>
+                    <li>Access to a library of resources</li>
+                    <li>Daily physical and mental exercises chosen for you</li>
+                    <li>Daily quizzes supporting your wellbeing</li>
+                    <li>Rewarding prizes</li>
+                </ul>
+                <ul class="nav_links">
+                    <li>Purchase</li>
+                </ul>
+            </div>
+            
+            <div class="column" style="background-color:goldenrod">
+              <h2>Premium</h2>
+              <h4>$2.50/month</h4>
+              <hr>
+              <ul>
+                <li>Fewer Ads</li>
+                <li>Access to a higher level of customization</li>
+                <li>More comprehensive access to libraries of resources</li>
+                <li>More daily activity selection</li>
+            </ul>
+            <ul>
+
+            </ul>
+            </div>
+          </div>
+    </body>
+</html>
