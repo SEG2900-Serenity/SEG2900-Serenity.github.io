@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+JP:wght@500&display=swap');
 
 *{
+  background-color: #FFEDDF;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
