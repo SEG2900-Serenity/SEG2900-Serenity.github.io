@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Serenity</title>
@@ -98,6 +96,8 @@
         width: 100%;
         background-size: cover;
         background-position: center;
+        font-family: 'sans-serif';
+
       }
 
       .footer{
@@ -168,7 +168,7 @@
       }
 
       /*This is the code for the search bar*/
-      .topnav input[type=text] {
+      .input[type=text] {
         float: right;
         padding: 6px;
         margin-top: 8px;
@@ -284,22 +284,36 @@
     </style>
   </head>
   <body>
-<header class = "navtop">
-      <a href="../html/index.html">
-          <img class = "logo" src = "https://cdn.discordapp.com/attachments/1021958151060336721/1036476242309939260/unknown.png" alt = "logo" style="display:block;position:absolute; width: 100px; height: 100px;left:10px;top:0px;padding-bottom: 0px;">
-      </a>
-      <nav class = "nav_bar">
-        <ul class = "nav_links">
-          <li><a href = "product.html">Features</a></li>
-          <li><a href = "pricing2.html">Pricing</a></li>
-          <li><a href = "team.html">Our Team</a></li>
-        </ul>
-    </nav>
-    <a class="cta" href = "#"><button class = "signup">Sign Up</button></a>
+
+    <!--<h1 class="header"> Serenity </h1>-->
+
+    <div class = "toppr">
+
+    <header class="navtop">
+
+    <img class = "logo" src = "https://cdn.discordapp.com/attachments/1021958151060336721/1036476242309939260/unknown.png" alt = "logo" style="display:block;position:absolute; width: 100px; height: 100px;left:10px;top:0px;padding-bottom: 0px;">
+
+     <div class="navtop-centered">
+        <nav class="nav_bar">
+          <ul class = "nav_links">
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "product.html">Features</a></li>
+              <li><a href = "pricing.html">Pricing</a></li>
+              <li><a href = "team.html">Our Team</a></li>
+          </ul>
+
+        </nav>
+      </div>
     </header>
-    
 
+        <div class="navtop-right">
+          <ul>
+            <a href = "#"><button class = "login" >Login</button></a>
+            <a  href = "#"><button class = "signup" style="float:right;">Sign Up</button></a>
+          </ul>
+        </div>
 
+    </div>
 
 
     <!--The body of the page-->
@@ -436,20 +450,19 @@
 
         <div class="row1">
         <div class="lower_navbar" id="div1">
-          <input type="text" placeholder="Search..">
+          <input type="text" placeholder="Search...">
           <br>
 
+            <ul>
+              <li> <a style="color:#344648" href="#">  Home</a></li>
+              <li><a style="font-family:arial" href = "index.html">Home</a></li>
 
-          <ul>
-            <li> <a style="color: #344648">  Home</a></li>
-            <li><a href = "index.html">Home</a></li>
+              <li><a style="font-family:arial" href = "product.html">Features</a></li>
 
-            <li><a href = "product.html">Features</a></li>
+              <li><a style="font-family:arial" href = "pricing.html">Pricing</a></li>
 
-            <li><a href = "pricing.html">Pricing</a></li>
-
-            <li><a href = "team.html">Our Team</a></li>
-          </ul>
+              <li><a style="font-family:arial" href = "team.html">Our Team</a></li>
+            </ul>
 
         </div>
 
@@ -466,7 +479,7 @@
 
           <h4 text-align="center"> Privacy and Terms of Services </h4>
           <br>
-          <h9> We at Serenity are committed to ensuring your data is secure and only the use for the data collected, is for the onsite and in-app features such as: quizzes, certifications and daily exercises. They'll also be used to provide the customers with addition information and help lines regarding the symptoms of their mental illness. For additional information, please look at the completed Terms of Service on the app.   </h9>
+          <h9 style="font-family:arial"> We at Serenity are committed to ensuring your data is secure and only the use for the data collected, is for the onsite and in-app features such as: quizzes, certifications and daily exercises. They'll also be used to provide the customers with addition information and help lines regarding the symptoms of their mental illness. For additional information, please look at the completed Terms of Service on the app.   </h9>
 
           <br><br>
           <!--<h5 style="text-align:center;"> <i>To connect the vulnerable parts of our society with the help they need </i></h5>-->
