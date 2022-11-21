@@ -16,16 +16,20 @@ li, a, .signup, .login {
   text-decoration: none;
 
 }
-
-.navtop{
-  display: flex; /*Display allows the iteams to be in the same line*/
-  align-items: center;
+.toppr{
+  display: flex;
   position: relative;
   padding: 20px;
 }
+.navtop{
+  /*display: flex;*/ /*Display allows the iteams to be in the same line*/
+  /*align-items: center;*/
+  /*position: relative;
+  padding: 20px;*/
+}
 
-.navtop ul{
-  float: left;
+.navtop ul{ /*does nothing apparent*/
+  float: right;
 }
 
 
@@ -43,12 +47,13 @@ li, a, .signup, .login {
   float: right;
   justify-content: space-between;
 
+
 }
 
 /*adjusting when the window size shrinks*/
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
-  .navtop li, .navtop-right {
+  .navtop li, .navtop_right { /*Used to have navtop_right*/
     float: none;
     display: block;
   }
@@ -80,16 +85,22 @@ li, a, .signup, .login {
   color: azure;
 }
 
+/*.active{
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+}*/
 .login{
   padding: 9px 25px;
-  background-color: #FFEDDF;
+  background-color: #FBE0C3;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   /*margin-left:50%;*/
     margin-right: 5px;*/
-  text-align: left;
+  text-align: right;
+  float: right;
 }
 
 .login:hover{
@@ -98,11 +109,12 @@ li, a, .signup, .login {
 
 .signup {
   padding: 9px 25px;
-  background-color: #FFEDDF;
+  background-color: #FFBB98;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  float: right;
 }
 
 .signup:hover{
@@ -114,4 +126,10 @@ li, a, .signup, .login {
   font-family: 'Noto Sans JP', sans-serif;
   padding-top: 1px;
   font-size: 80%;
+}
+
+.logo{
+  cursor: pointer;
+  width:40px;
+  height: 40px;
 }
